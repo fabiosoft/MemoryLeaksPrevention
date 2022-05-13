@@ -13,7 +13,20 @@
 		E5E0C4E9282F0A180057CF14 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5E0C4E7282F0A180057CF14 /* Main.storyboard */; };
 		E5E0C4EB282F0A1D0057CF14 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5E0C4EA282F0A1D0057CF14 /* Assets.xcassets */; };
 		E5E0C4EE282F0A1D0057CF14 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5E0C4EC282F0A1D0057CF14 /* LaunchScreen.storyboard */; };
+		E5E0C4FC282F0A370057CF14 /* MemoryLeaksPreventionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E0C4FB282F0A370057CF14 /* MemoryLeaksPreventionTests.swift */; };
+		E5E0C503282F0C380057CF14 /* XCTestCase+Dealloc.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E0C502282F0C380057CF14 /* XCTestCase+Dealloc.swift */; };
+		E5E0C505282F10B90057CF14 /* Objects.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E0C504282F10B90057CF14 /* Objects.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E5E0C4FD282F0A370057CF14 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E5E0C4D6282F0A180057CF14 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E5E0C4DD282F0A180057CF14;
+			remoteInfo = MemoryLeaksPrevention;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		E5E0C4DE282F0A180057CF14 /* MemoryLeaksPrevention.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MemoryLeaksPrevention.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,10 +37,21 @@
 		E5E0C4EA282F0A1D0057CF14 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E5E0C4ED282F0A1D0057CF14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E5E0C4EF282F0A1D0057CF14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E5E0C4F9282F0A370057CF14 /* MemoryLeaksPreventionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MemoryLeaksPreventionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5E0C4FB282F0A370057CF14 /* MemoryLeaksPreventionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryLeaksPreventionTests.swift; sourceTree = "<group>"; };
+		E5E0C502282F0C380057CF14 /* XCTestCase+Dealloc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+Dealloc.swift"; sourceTree = "<group>"; };
+		E5E0C504282F10B90057CF14 /* Objects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Objects.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		E5E0C4DB282F0A180057CF14 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E5E0C4F6282F0A370057CF14 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,6 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				E5E0C4E0282F0A180057CF14 /* MemoryLeaksPrevention */,
+				E5E0C4FA282F0A370057CF14 /* MemoryLeaksPreventionTests */,
 				E5E0C4DF282F0A180057CF14 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				E5E0C4DE282F0A180057CF14 /* MemoryLeaksPrevention.app */,
+				E5E0C4F9282F0A370057CF14 /* MemoryLeaksPreventionTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -63,8 +89,18 @@
 				E5E0C4EA282F0A1D0057CF14 /* Assets.xcassets */,
 				E5E0C4EC282F0A1D0057CF14 /* LaunchScreen.storyboard */,
 				E5E0C4EF282F0A1D0057CF14 /* Info.plist */,
+				E5E0C504282F10B90057CF14 /* Objects.swift */,
 			);
 			path = MemoryLeaksPrevention;
+			sourceTree = "<group>";
+		};
+		E5E0C4FA282F0A370057CF14 /* MemoryLeaksPreventionTests */ = {
+			isa = PBXGroup;
+			children = (
+				E5E0C4FB282F0A370057CF14 /* MemoryLeaksPreventionTests.swift */,
+				E5E0C502282F0C380057CF14 /* XCTestCase+Dealloc.swift */,
+			);
+			path = MemoryLeaksPreventionTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -87,6 +123,24 @@
 			productReference = E5E0C4DE282F0A180057CF14 /* MemoryLeaksPrevention.app */;
 			productType = "com.apple.product-type.application";
 		};
+		E5E0C4F8282F0A370057CF14 /* MemoryLeaksPreventionTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E5E0C4FF282F0A370057CF14 /* Build configuration list for PBXNativeTarget "MemoryLeaksPreventionTests" */;
+			buildPhases = (
+				E5E0C4F5282F0A370057CF14 /* Sources */,
+				E5E0C4F6282F0A370057CF14 /* Frameworks */,
+				E5E0C4F7282F0A370057CF14 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E5E0C4FE282F0A370057CF14 /* PBXTargetDependency */,
+			);
+			name = MemoryLeaksPreventionTests;
+			productName = MemoryLeaksPreventionTests;
+			productReference = E5E0C4F9282F0A370057CF14 /* MemoryLeaksPreventionTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -99,6 +153,10 @@
 				TargetAttributes = {
 					E5E0C4DD282F0A180057CF14 = {
 						CreatedOnToolsVersion = 13.3.1;
+					};
+					E5E0C4F8282F0A370057CF14 = {
+						CreatedOnToolsVersion = 13.3.1;
+						TestTargetID = E5E0C4DD282F0A180057CF14;
 					};
 				};
 			};
@@ -116,6 +174,7 @@
 			projectRoot = "";
 			targets = (
 				E5E0C4DD282F0A180057CF14 /* MemoryLeaksPrevention */,
+				E5E0C4F8282F0A370057CF14 /* MemoryLeaksPreventionTests */,
 			);
 		};
 /* End PBXProject section */
@@ -131,6 +190,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E5E0C4F7282F0A370057CF14 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -140,11 +206,29 @@
 			files = (
 				E5E0C4E6282F0A180057CF14 /* ViewController.swift in Sources */,
 				E5E0C4E2282F0A180057CF14 /* AppDelegate.swift in Sources */,
+				E5E0C505282F10B90057CF14 /* Objects.swift in Sources */,
 				E5E0C4E4282F0A180057CF14 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E5E0C4F5282F0A370057CF14 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5E0C4FC282F0A370057CF14 /* MemoryLeaksPreventionTests.swift in Sources */,
+				E5E0C503282F0C380057CF14 /* XCTestCase+Dealloc.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E5E0C4FE282F0A370057CF14 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E5E0C4DD282F0A180057CF14 /* MemoryLeaksPrevention */;
+			targetProxy = E5E0C4FD282F0A370057CF14 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		E5E0C4E7282F0A180057CF14 /* Main.storyboard */ = {
@@ -336,6 +420,42 @@
 			};
 			name = Release;
 		};
+		E5E0C500282F0A370057CF14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q78LKWJ5MC;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fabiosoft.MemoryLeaksPreventionTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MemoryLeaksPrevention.app/MemoryLeaksPrevention";
+			};
+			name = Debug;
+		};
+		E5E0C501282F0A370057CF14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q78LKWJ5MC;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fabiosoft.MemoryLeaksPreventionTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MemoryLeaksPrevention.app/MemoryLeaksPrevention";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -353,6 +473,15 @@
 			buildConfigurations = (
 				E5E0C4F3282F0A1D0057CF14 /* Debug */,
 				E5E0C4F4282F0A1D0057CF14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E5E0C4FF282F0A370057CF14 /* Build configuration list for PBXNativeTarget "MemoryLeaksPreventionTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E5E0C500282F0A370057CF14 /* Debug */,
+				E5E0C501282F0A370057CF14 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
